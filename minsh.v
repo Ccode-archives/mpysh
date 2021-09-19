@@ -1,8 +1,8 @@
 import os
 
 fn main() {
-    com := ""
-    com_ := []
+    mut com := ""
+    mut com_ := ['']
     for {
         com = os.input(">> ")
         com_ = com.split(" ")
