@@ -1,6 +1,6 @@
 import os
 
-fn exec_comm(com string, exists string) {
+fn exec_comm(com string, com_ string, exists bool) {
     if exists == true {
         os.execute(com)
     } else {
@@ -15,7 +15,7 @@ fn main() {
     for {
         com = os.input(">> ")
         com_ = com.split(" ")
-        exists = exists_in_system_path(com_[0])
+        exists = os.exists_in_system_path(com_[0])
         if com_[0] == "cd" {
             os.chdir(com_[1]) or { println("minsh") }
         } else {
