@@ -18,7 +18,7 @@ fn main() {
         com_ = com.split(" ")
         exists = os.exists_in_system_path(com_[0])
         if com_[0] == "cd" {
-            os.chdir(com_[1]) or { println("minsh") }
+            os.chdir(com_[1]) or { println(com_[1] + " does not exist or is not a directory") }
         } else {
             exec_comm(com, com_[0], exists)
         }
