@@ -3,7 +3,7 @@ import os
 fn exec_comm(com string, com_ string, exists bool) {
     if exists == true {
         output := os.execute(com)
-        println(output.output)
+        print(output.output)
     } else {
         println("minsh: " + com_ + ": not found")
     }
