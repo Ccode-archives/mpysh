@@ -19,7 +19,7 @@ fn main() {
         if com_[0] == "cd" {
             os.chdir(com_[1]) or { println("minsh") }
         } else {
-            exec_comm(com, exists)
+            exec_comm(com, com_[0], exists)
         }
     }
 }
