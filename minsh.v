@@ -1,7 +1,10 @@
 import os
 
 fn exec_comm(com string, com_ string, exists bool) {
-    if exists == true {
+    split := com.split(';')
+    if split.len > 1 {
+        println("don't use ; in commands.")
+    } else if exists == true {
         output := os.execute(com)
         print(output.output)
     } else {
