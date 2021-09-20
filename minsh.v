@@ -5,7 +5,7 @@ fn exec_comm(com string, com_ string, exists bool) {
     split2 := com.split('&&')
     if split.len > 1 {
         println("don't use ; in commands.")
-    } else if split2 > 1 {
+    } else if split2.len > 1 {
         println("don't use && in commands")
     } else if exists == true {
         output := os.execute(com)
