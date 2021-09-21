@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 
 def exec_comm(com, com_, exists):
