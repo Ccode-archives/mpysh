@@ -7,6 +7,9 @@ fn exec_comm(com string, com_ string, exists bool) {
         println("don't use ; in commands.")
     } else if split2.len > 1 {
         println("don't use && in commands")
+    } else if com_ == "exec" {
+        output := os.execute("~/minsh-bin/" + com)
+        print(output.output)
     } else if exists == true {
         output := os.execute(com)
         print(output.output)
