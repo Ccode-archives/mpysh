@@ -22,7 +22,8 @@ def exists_in_system_path(name):
     return find_executable(name) is not None
 
 while True:
-    com = input(">> ")
+    pwd = os.getcwd()
+    com = input(pwd + " $ ")
     com_ = com.split(" ")
     exists = exists_in_system_path(com_[0])
     if not exists == False:
