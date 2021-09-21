@@ -1,5 +1,5 @@
 $1 minsh.v
-cwd = $PWD
+cwd=$PWD
 cd ~
 mkdir minsh-bin
 cd $cwd
