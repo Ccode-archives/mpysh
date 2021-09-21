@@ -1,5 +1,5 @@
 # minsh
-a minimal shell in v. Made to be cross platform.
+a minimal shell in python.
 # TODO
 1. readme
 2. cwd before prompt
