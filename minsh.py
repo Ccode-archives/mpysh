@@ -21,6 +21,7 @@ def exists_in_system_path(name):
     from distutils.spawn import find_executable
     return find_executable(name) is not None
 
+home = os.getenv("HOME")
 while True:
     pwd = os.getcwd()
     com = input(pwd + " $ ")
@@ -29,8 +30,9 @@ while True:
     if not exists == False:
         exists == True
     if com_[0] == "cd":
+        change = com[0].replace("~", home)
         try:
-            os.chdir(com_[1])
+            os.chdir(change)
         except:
             print(com_[1] + " does not exist or is not a directory")
     elif com_[0] == "exit":
