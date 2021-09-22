@@ -24,6 +24,9 @@ def exists_in_system_path(name):
 home = os.getenv("HOME")
 while True:
     pwd = os.getcwd()
+    prompt = pwd
+    if pwd == home:
+        prompt = "~"
     com = input(pwd + " $ ")
     com_ = com.split(" ")
     exists = exists_in_system_path(com_[0])
