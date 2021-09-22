@@ -12,4 +12,4 @@ exec sample-script.sh
 ```
 
 # TODO
-1. use relative path in pwd before prompt
+None right now!
