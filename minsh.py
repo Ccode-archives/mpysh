@@ -30,7 +30,7 @@ while True:
     if not exists == False:
         exists == True
     if com_[0] == "cd":
-        change = com[1].replace("~", home)
+        change = com_[1].replace("~", home)
         try:
             os.chdir(change)
         except:
