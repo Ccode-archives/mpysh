@@ -10,6 +10,10 @@ Instead of relative path for commands the shell will use `exec` for executing sc
 # example
 exec sample-script.sh
 ```
-
+# How to install as a shell
+1. Run build.sh.
+2. Add the path to the minsh executable to /etc/shells.
+3. Run `chsh` and enter the path to the minsh executable.
+4. Restart system!
 # TODO
 None right now!
