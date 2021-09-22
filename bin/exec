@@ -1,7 +1,11 @@
 #!/bin/bash
 
 if [ -f "$1" ]; then
-  eval "./$@"
+  if [ -x $1 ]; then
+    eval "./$@"
+  else
+    echo "exec: file is not executable"
+  fi
 else
   echo "exec: file does not exist"
 fi
