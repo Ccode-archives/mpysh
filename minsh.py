@@ -27,7 +27,7 @@ while True:
     prompt = pwd
     if pwd == home:
         prompt = "~"
-    com = input(pwd + " $ ")
+    com = input(prompt + " $ ")
     com_ = com.split(" ")
     exists = exists_in_system_path(com_[0])
     if not exists == False:
