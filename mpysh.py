@@ -7,18 +7,18 @@ def exec_comm(com, com_, exists):
     split = com.split(';')
     split2 = com.split('&&')
     if len(split) > 1:
-        print("minsh: don't use ; in commands.")
+        print("mpysh: don't use ; in commands.")
     elif len(split2) > 1:
-        print("minsh: don't use && in commands.")
+        print("mpysh: don't use && in commands.")
     # exec builtin
     elif com_ == "exec":
-        os.system("~/minsh-bin/" + com)
+        os.system("~/mpysh-bin/" + com)
     # normal command
     elif exists == True:
         os.system(com)
     # command does not exist
     else:
-        print("minsh: " + com_ + ": not found")
+        print("mpysh: " + com_ + ": not found")
 
 
 # exists in path helper
