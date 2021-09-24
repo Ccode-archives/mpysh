@@ -1,4 +1,4 @@
-# minsh
+# mpysh
 a minimal shell in python.
 
 # The shell was originally writen in vlang
@@ -12,8 +12,8 @@ exec sample-script.sh
 ```
 # How to install as a shell
 1. Run build.sh.
-2. Add the path to the minsh executable to /etc/shells.
-3. Run `chsh` and enter the path to the minsh executable.
+2. Add the path to the mpysh executable to /etc/shells.
+3. Run `chsh` and enter the path to the mpysh executable.
 4. Restart system!
 
 # Is it usable?
