@@ -1,10 +1,10 @@
 #!/usr/bin/bash
-cp minsh.py minsh
-chmod +x minsh
+cp mpysh.py mpysh
+chmod +x mpysh
 cwd=$PWD
 cd ~
-mkdir minsh-bin
+mkdir mpysh-bin
 cd $cwd
 cd bin
 chmod +x exec
-cp * ~/minsh-bin
+cp * ~/mpysh-bin
